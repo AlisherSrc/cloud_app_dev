@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(#3939be, #f5f5f5);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"], input[type="password"], select, input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+input[type="submit"], button[type="submit"] {
+  background-color: transparent;
+  border: 1px solid black;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 500px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container p{
+  color: #187bcd;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: filter 0.2s ease-in-out;
+}
+
+.form-container p:hover{
+  filter: brightness(110%);
+}
+
+.form-container h2{
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}

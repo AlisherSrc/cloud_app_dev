@@ -1,0 +1,21 @@
+<main>
+  <section class="pins-container">
+    <div class="pin" *ngFor="let pin of pins" (mouseenter)="onPinHover(pin)" (mouseleave)="onPinLeave(pin)">
+      <app-pin [pin]=pin/>
+    </div>
+    <div
+      class="scroll-trigger"
+      infinite-scroll
+      [infiniteScrollDistance]="2"
+      [infiniteScrollThrottle]="500"
+      (scrolled)="onScroll()"
+    ></div>
+  </section>
+
+  <div class="loader" *ngIf="!loaded">
+    <div class="spinner"></div>
+    <p>Loading more pins...</p>
+  </div>
+
+</main>
+

@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Printerest API
+  version: 1.0.0
+servers:
+  - url: https://printerest-cloud.du.r.appspot.com
+paths:
+  /pins:
+    get:
+      summary: Get all pins
+      responses:
+        '200':
+          description: Successful response
+x-google-endpoints:
+- name: printerest-cloud.du.r.appspot.com
+  target: printerest-cloud.du.r.appspot.com

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: printerest-deployment
+spec:
+  replicas: 3  # Number of replicas (pods)
+  selector:
+    matchLabels:
+      app: printerest-app
+  template:
+    metadata:
+      labels:
+        app: printerest-app
+    spec:
+      containers:
+      - name: printerest-app
+        image: gcr.io/printerest-cloud/printerest-app
+        ports:
+        - containerPort: 8000
